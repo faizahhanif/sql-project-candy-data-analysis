@@ -1,0 +1,26 @@
+SELECT * FROM us_candy_db.candy_sales;
+ALTER TABLE us_candy_db.candy_sales RENAME COLUMN `Customer_ID` TO customer_id;
+ALTER TABLE us_candy_db.candy_sales RENAME COLUMN `Row ID` TO row_id;
+ALTER TABLE us_candy_db.candy_sales RENAME COLUMN `Order ID` TO order_id;
+ALTER TABLE us_candy_db.candy_sales RENAME COLUMN `Order Date` TO order_date;
+ALTER TABLE us_candy_db.candy_sales RENAME COLUMN `Ship Date` TO ship_date;
+ALTER TABLE us_candy_db.candy_sales RENAME COLUMN `Ship Mode` TO ship_mode;
+ALTER TABLE us_candy_db.candy_sales RENAME COLUMN `Country/Region` TO country_or_region;
+ALTER TABLE us_candy_db.candy_sales RENAME COLUMN `City` TO city;
+ALTER TABLE us_candy_db.candy_sales RENAME COLUMN `State/Province` TO state_province;
+ALTER TABLE us_candy_db.candy_sales RENAME COLUMN `Postal Code` TO postal_code;
+ALTER TABLE us_candy_db.candy_sales RENAME COLUMN `Division` TO division;
+ALTER TABLE us_candy_db.candy_sales RENAME COLUMN `Region` TO region;
+ALTER TABLE us_candy_db.candy_sales RENAME COLUMN `Product ID` TO product_id;
+ALTER TABLE us_candy_db.candy_sales RENAME COLUMN `Product Name` TO product_name;
+ALTER TABLE us_candy_db.candy_sales RENAME COLUMN `Sales` TO sales;
+ALTER TABLE us_candy_db.candy_sales RENAME COLUMN `Units` TO units;
+ALTER TABLE us_candy_db.candy_sales RENAME COLUMN `Gross Profit` TO gross_profit;
+ALTER TABLE us_candy_db.candy_sales RENAME COLUMN `Cost` TO cost;
+
+ALTER TABLE us_candy_db.candy_sales MODIFY COLUMN customer_id VARCHAR(50);
+ALTER TABLE us_candy_db.candy_sales MODIFY COLUMN row_id VARCHAR(50);
+ALTER TABLE us_candy_db.candy_sales MODIFY COLUMN order_id VARCHAR(50);
+ALTER TABLE us_candy_db.candy_sales MODIFY COLUMN order_date DATETIME;
+ALTER TABLE us_candy_db.candy_sales MODIFY COLUMN ship_date DATETIME;
+DESC us_candy_db.candy_sales;
